@@ -1,0 +1,84 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.contact:hover {
+  background-color: #dddbdb;
+}
+
+.details {
+  width: 85%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.details div {
+  width: 255px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  gap: 8px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.details img {
+  width: 25px;
+  height: 25px;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.actions button {
+  width: 50px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editButton {
+  background-color: #ffa500;
+  color: white;
+}
+
+.editButton:hover {
+  background-color: #cc8400;
+}
+
+.deleteButton {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: #cc0000;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
+}
+
+.actions button:hover .icon {
+  width: 28px;
+  height: 28px;
+} 
