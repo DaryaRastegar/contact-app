@@ -20,7 +20,7 @@ const ContactForm = ({ contact, onSave, onClose }) => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-
+   
   const validate = () => {
     let tempErrors = {};
     if (!formData.name.trim()) tempErrors.name = 'Name is required';
