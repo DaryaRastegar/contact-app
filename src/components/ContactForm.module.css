@@ -76,11 +76,11 @@
   background-color: #b3b3b3;
 }
 
-.formActions button[type="submit"] {
+.formActions button[type='submit'] {
   background-color: #4a90e2;
   color: white;
 }
 
-.formActions button[type="submit"]:hover {
+.formActions button[type='submit']:hover {
   background-color: #357ab8;
 }

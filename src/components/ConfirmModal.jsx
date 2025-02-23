@@ -1,22 +1,21 @@
-import React, { useEffect, useRef } from 'react';
-import styles from './ConfirmModal.module.css';
+import React, { useEffect, useRef } from 'react'
+import styles from './ConfirmModal.module.css'
 
 const ConfirmModal = ({ message, onConfirm, onCancel }) => {
-  const formRef = useRef();
+  const formRef = useRef()
 
   useEffect(() => {
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside)
     return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, []);
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
 
   const handleClickOutside = (event) => {
     if (formRef.current && !formRef.current.contains(event.target)) {
-      onCancel();
+      onCancel()
     }
-  };
-
+  }
 
   return (
     <div className={styles.modalBackdrop}>
@@ -32,7 +31,7 @@ const ConfirmModal = ({ message, onConfirm, onCancel }) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ConfirmModal;
+export default ConfirmModal

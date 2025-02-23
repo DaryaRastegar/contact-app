@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './Contact.module.css';
+import React from 'react'
+import styles from './Contact.module.css'
 
 import deleteIcon from './../assets/delete.png'
 import editIcon from './../assets/edit.png'
@@ -11,7 +11,9 @@ const Contact = ({ contact, onEdit, onDelete }) => {
     <div className={styles.contact}>
       <div className={styles.details}>
         <div>
-          <p><strong>Name:</strong> {contact.name} {contact.lastname}</p>
+          <p>
+            <strong>Name:</strong> {contact.name} {contact.lastname}
+          </p>
         </div>
         <div>
           <img src={emailIcon} alt="email" />
@@ -23,15 +25,21 @@ const Contact = ({ contact, onEdit, onDelete }) => {
         </div>
       </div>
       <div className={styles.actions}>
-        <button className={styles.editButton} onClick={() => onEdit(contact.id)}>
+        <button
+          className={styles.editButton}
+          onClick={() => onEdit(contact.id)}
+        >
           <img className={styles.icon} src={editIcon} alt="edit" />
         </button>
-        <button className={styles.deleteButton} onClick={() => onDelete(contact.id)}>
+        <button
+          className={styles.deleteButton}
+          onClick={() => onDelete(contact.id)}
+        >
           <img className={styles.icon} src={deleteIcon} alt="delete" />
         </button>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react';
-import styles from './Toast.module.css';
+import React, { useEffect } from 'react'
+import styles from './Toast.module.css'
 
 const Toast = ({ message, onClose }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      onClose();
-    }, 30000); // Auto-dismiss after 3 seconds
-    return () => clearTimeout(timer);
-  }, [onClose]);
+      onClose()
+    }, 30000) // Auto-dismiss after 3 seconds
+    return () => clearTimeout(timer)
+  }, [onClose])
 
   return (
     <div className={styles.toast}>
@@ -16,7 +16,7 @@ const Toast = ({ message, onClose }) => {
         ×
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default Toast;
+export default Toast
